@@ -7,6 +7,8 @@
     <title>Conectividad Rural en México</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/page-styles.css">
+    <link rel="stylesheet" href="css/conectividad.css">
 </head>
 <body>
     <header class="site-header">
@@ -35,9 +37,15 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero-animated">
+            <div class="hero-background">
+                <div class="animated-shape shape1"></div>
+                <div class="animated-shape shape2"></div>
+                <div class="animated-shape shape3"></div>
+            </div>
             <div class="container">
                 <h1>Conectividad Rural en México</h1>
+                <p>Explorando los desafíos y soluciones para llevar internet y telefonía móvil a todas las comunidades mexicanas</p>
                 <p class="disclaimer">Este sitio web no está afiliado con ninguna institución gubernamental mexicana.</p>
             </div>
         </section>
@@ -48,211 +56,343 @@
             </div>
         </section>
 
-        <section class="content-section bg-image-1">
+        <section class="content-section">
             <div class="container">
-                <article>
-                    <h2>Situación actual</h2>
-                    <p>La brecha digital entre zonas urbanas y rurales en México sigue siendo considerable, a pesar de los avances logrados en los últimos años:</p>
-                    <ul>
-                        <li>Aproximadamente el 72% de la población urbana tiene acceso a internet, mientras que en zonas rurales esta cifra apenas alcanza el 47% (datos de 2025).</li>
-                        <li>Más de 20,000 localidades rurales con menos de 500 habitantes aún carecen de cualquier tipo de conectividad móvil o fija.</li>
-                        <li>La velocidad promedio de internet en zonas rurales es de 15 Mbps, comparado con 50 Mbps en áreas urbanas.</li>
-                        <li>El costo de implementación de infraestructura tradicional en zonas remotas puede ser hasta 5 veces mayor que en zonas urbanas.</li>
-                    </ul>
-                    
-                    <p>Los principales obstáculos para la conectividad rural incluyen:</p>
-                    <ul>
-                        <li>Geografía accidentada que dificulta el despliegue de infraestructura.</li>
-                        <li>Baja densidad poblacional que reduce el retorno de inversión para operadores privados.</li>
-                        <li>Limitaciones en el suministro eléctrico en algunas comunidades.</li>
-                        <li>Barreras socioeconómicas y de alfabetización digital.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section bg-image-2">
-            <div class="container">
-                <article>
-                    <h2>Principales iniciativas del gobierno</h2>
-                    <p>El gobierno mexicano ha implementado diversos programas para mejorar la conectividad rural:</p>
-                    
-                    <h3>Internet para Todos</h3>
-                    <p>Iniciativa federal lanzada en 2019 que busca garantizar el acceso a internet en todo el territorio nacional:</p>
-                    <ul>
-                        <li>Objetivo: conectar a 130,000 localidades en zonas marginadas para 2025.</li>
-                        <li>Implementación de más de 2,000 puntos de acceso gratuito en plazas públicas, escuelas y centros de salud.</li>
-                        <li>Utilización de la red de fibra óptica de la Comisión Federal de Electricidad (CFE) como columna vertebral.</li>
-                        <li>Avance actual: aproximadamente 75,000 localidades conectadas hasta abril de 2025.</li>
-                    </ul>
-                    
-                    <h3>Red Compartida</h3>
-                    <p>Proyecto de asociación público-privada que opera una red mayorista de telecomunicaciones:</p>
-                    <ul>
-                        <li>Utiliza la banda de 700 MHz para proporcionar cobertura 4G LTE en zonas rurales.</li>
-                        <li>Meta de cobertura del 92.2% de la población para finales de 2025.</li>
-                        <li>Modelo mayorista que permite a múltiples operadores ofrecer servicios sin necesidad de desplegar infraestructura propia.</li>
-                    </ul>
-                    
-                    <h3>Programa de Cobertura Social</h3>
-                    <p>Iniciativa del Instituto Federal de Telecomunicaciones (IFT):</p>
-                    <ul>
-                        <li>Otorga incentivos regulatorios a operadores que extiendan servicios a zonas de baja rentabilidad.</li>
-                        <li>Reducción de tarifas de interconexión para llamadas originadas en zonas rurales.</li>
-                        <li>Simplificación de trámites para el despliegue de infraestructura en comunidades prioritarias.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section bg-image-3">
-            <div class="container">
-                <article>
-                    <h2>Empresas participantes</h2>
-                    <p>Diversas empresas del sector privado están contribuyendo a mejorar la conectividad rural en México:</p>
-                    
-                    <h3>Operadores tradicionales</h3>
-                    <ul>
-                        <li><strong>Telmex Rural:</strong> Programa específico para llevar telefonía e internet a poblaciones de menos de 5,000 habitantes, con tarifas subsidiadas y equipos adaptados para condiciones rurales.</li>
-                        <li><strong>Telcel:</strong> Expansión de su red 4G a comunidades rurales mediante el uso de antenas de largo alcance y estaciones base alimentadas por energía solar.</li>
-                        <li><strong>AT&T México:</strong> Participación en el programa "Conectando Comunidades" con foco en estados como Chiapas, Oaxaca y Guerrero.</li>
-                    </ul>
-                    
-                    <h3>Operadores regionales</h3>
-                    <ul>
-                        <li><strong>Altan Redes:</strong> Operador de la Red Compartida que proporciona infraestructura mayorista a otros proveedores.</li>
-                        <li><strong>Conecta Rural:</strong> Empresa mexicana especializada en soluciones de conectividad para zonas remotas mediante tecnologías híbridas.</li>
-                        <li><strong>Cooperativas comunitarias:</strong> Modelos de telecomunicaciones gestionados por las propias comunidades, como Telecomunicaciones Indígenas Comunitarias en Oaxaca.</li>
-                    </ul>
-                    
-                    <h3>Empresas tecnológicas globales</h3>
-                    <ul>
-                        <li><strong>Starlink:</strong> El servicio de internet satelital de SpaceX ha comenzado operaciones en México con enfoque en zonas rurales, ofreciendo velocidades de hasta 150 Mbps.</li>
-                        <li><strong>Microsoft Airband:</strong> Iniciativa que utiliza espacios en blanco del espectro de TV para proporcionar conectividad de banda ancha en regiones remotas.</li>
-                        <li><strong>Facebook Connectivity:</strong> Colaboración con operadores locales para implementar soluciones de acceso como Express WiFi en comunidades rurales.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section bg-image-4">
-            <div class="container">
-                <article>
-                    <h2>Tecnología satelital y 4G rural</h2>
-                    <p>Las soluciones tecnológicas innovadoras están jugando un papel crucial en la conectividad de zonas rurales:</p>
-                    
-                    <h3>Internet satelital de nueva generación</h3>
-                    <p>Los servicios satelitales están revolucionando la conectividad rural:</p>
-                    <ul>
-                        <li><strong>Constelaciones de órbita baja (LEO):</strong> Satélites como los de Starlink operan mucho más cerca de la Tierra (550 km vs 35,000 km de los satélites tradicionales), reduciendo significativamente la latencia.</li>
-                        <li><strong>Velocidades competitivas:</strong> Ofrecen entre 50-150 Mbps, comparables con conexiones urbanas de banda ancha.</li>
-                        <li><strong>Independencia geográfica:</strong> Funcionan en áreas montañosas o selváticas donde el despliegue de infraestructura terrestre es inviable.</li>
-                        <li><strong>Limitaciones:</strong> Costos iniciales elevados (equipo terminal de $500 USD y suscripciones mensuales de $99 USD), aunque existen programas de subsidio gubernamental.</li>
-                    </ul>
-                    
-                    <h3>Soluciones 4G/5G rurales</h3>
-                    <p>Adaptaciones de tecnologías móviles para entornos rurales:</p>
-                    <ul>
-                        <li><strong>Estaciones base de largo alcance:</strong> Modificaciones que permiten cubrir hasta 30 km de radio con una sola torre, comparado con los 5-10 km en entornos urbanos.</li>
-                        <li><strong>Sistemas alimentados por energía renovable:</strong> Torres 4G equipadas con paneles solares y baterías para operar en zonas sin acceso a la red eléctrica.</li>
-                        <li><strong>Tecnología 450 MHz:</strong> Utilización de frecuencias bajas que permiten mayor penetración y alcance, ideal para zonas rurales.</li>
-                        <li><strong>Redes comunitarias:</strong> Implementaciones de pequeña escala gestionadas por las propias comunidades con apoyo técnico externo.</li>
-                    </ul>
-                    
-                    <h3>Soluciones híbridas</h3>
-                    <p>Combinación de tecnologías para maximizar eficiencia y cobertura:</p>
-                    <ul>
-                        <li><strong>Backhaul satelital + distribución local:</strong> Uso de enlaces satelitales para conectar una comunidad a internet, y distribución local mediante WiFi o pequeñas celdas 4G.</li>
-                        <li><strong>Mesh networks:</strong> Redes de nodos interconectados que extienden la cobertura a través de múltiples puntos de acceso que se comunican entre sí.</li>
-                        <li><strong>TV White Spaces:</strong> Utilización de frecuencias no utilizadas del espectro de televisión para transmitir datos de banda ancha a largas distancias.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section bg-image-5">
-            <div class="container">
-                <article>
-                    <h2>Beneficios para la educación y salud</h2>
-                    <p>La conectividad rural está transformando sectores esenciales como la educación y la salud en comunidades remotas:</p>
-                    
-                    <h3>Impacto en la educación</h3>
-                    <ul>
-                        <li><strong>Acceso a recursos educativos digitales:</strong> Estudiantes rurales pueden acceder a bibliotecas virtuales, cursos en línea y materiales multimedia que complementan los limitados recursos físicos disponibles en sus escuelas.</li>
-                        <li><strong>Educación a distancia:</strong> Posibilidad de tomar clases con profesores especializados que no están físicamente en la comunidad, especialmente importante para niveles medio superior y superior.</li>
-                        <li><strong>Capacitación docente:</strong> Maestros rurales pueden participar en programas de desarrollo profesional en línea sin necesidad de desplazarse a centros urbanos.</li>
-                        <li><strong>Reducción de la deserción escolar:</strong> Estudios recientes muestran una disminución del 15% en la tasa de abandono escolar en comunidades que obtuvieron conectividad a internet.</li>
-                    </ul>
-                    
-                    <h3>Transformación de servicios de salud</h3>
-                    <ul>
-                        <li><strong>Telemedicina:</strong> Consultas remotas con especialistas médicos que no están disponibles localmente, reduciendo la necesidad de viajes costosos y difíciles para los pacientes.</li>
-                        <li><strong>Monitoreo remoto:</strong> Seguimiento de pacientes con enfermedades crónicas mediante dispositivos conectados que transmiten datos vitales a centros de salud.</li>
-                        <li><strong>Capacitación continua:</strong> Personal de salud rural puede mantenerse actualizado mediante cursos y webinars en línea.</li>
-                        <li><strong>Sistemas de emergencia:</strong> Mejora en la coordinación de servicios de emergencia y evacuaciones médicas gracias a la conectividad constante.</li>
-                        <li><strong>Gestión de inventarios:</strong> Optimización de suministros médicos y medicamentos en clínicas rurales mediante sistemas digitales de control.</li>
-                    </ul>
-                    
-                    <h3>Resultados cuantificables</h3>
-                    <p>Según estudios recientes del Instituto Nacional de Salud Pública y la Secretaría de Educación:</p>
-                    <ul>
-                        <li>Reducción del 30% en el tiempo de diagnóstico de enfermedades complejas en comunidades con acceso a telemedicina.</li>
-                        <li>Aumento del 25% en la continuidad educativa a nivel medio superior en zonas rurales conectadas.</li>
-                        <li>Mejora del 20% en resultados de pruebas estandarizadas en escuelas rurales con acceso a internet educativo.</li>
-                        <li>Disminución del 35% en gastos de transporte relacionados con atención médica para familias en comunidades remotas.</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-        <section class="content-section bg-image-6">
-            <div class="container">
-                <article>
-                    <h2>Casos de éxito reales</h2>
-                    <p>Ejemplos concretos de comunidades que han experimentado transformaciones significativas gracias a la conectividad:</p>
-                    
-                    <div class="case-study">
-                        <h3>San Miguel Huautla, Oaxaca</h3>
-                        <p>Comunidad zapoteca de 1,200 habitantes que implementó una red comunitaria autónoma:</p>
-                        <ul>
-                            <li>Modelo de telecomunicaciones indígenas comunitarias con tarifas mensuales de 30 pesos por familia.</li>
-                            <li>Administración local de la red por un comité elegido por la asamblea comunitaria.</li>
-                            <li>Resultados: aumento del 40% en la permanencia escolar y creación de 5 microempresas locales que comercializan productos artesanales en línea.</li>
-                            <li>Reconocimiento internacional como modelo de conectividad sostenible y culturalmente apropiada.</li>
-                        </ul>
+                <h2 class="section-title">Situación actual</h2>
+                <p>La brecha digital entre zonas urbanas y rurales en México sigue siendo considerable, a pesar de los avances logrados en los últimos años:</p>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-value">72%</div>
+                        <div class="stat-label">Población urbana con acceso a internet</div>
                     </div>
-                    
-                    <div class="case-study">
-                        <h3>El Limón, Michoacán</h3>
-                        <p>Localidad de 2,500 habitantes beneficiada por el programa Internet para Todos:</p>
-                        <ul>
-                            <li>Instalación de una torre 4G conectada a la red troncal de CFE Telecomunicaciones.</li>
-                            <li>Centro comunitario digital con 15 computadoras y capacitación gratuita para residentes.</li>
-                            <li>Resultados: implementación de un sistema de telemedicina que atiende a 500 pacientes mensualmente y reducción del 60% en viajes a la capital del estado para trámites administrativos.</li>
-                        </ul>
+                    <div class="stat-card">
+                        <div class="stat-value">47%</div>
+                        <div class="stat-label">Población rural con acceso a internet</div>
                     </div>
-                    
-                    <div class="case-study">
-                        <h3>Ejido Nueva Esperanza, Quintana Roo</h3>
-                        <p>Comunidad maya de 800 habitantes que adoptó soluciones satelitales:</p>
-                        <ul>
-                            <li>Implementación de terminal Starlink subsidiada por el gobierno estatal y administrada por la cooperativa local de ecoturismo.</li>
-                            <li>Distribución de señal mediante una red mesh WiFi que cubre el centro comunitario, la escuela y el centro de salud.</li>
-                            <li>Resultados: incremento del 80% en reservas de ecoturismo gracias a presencia en línea, implementación de sistema de alerta temprana para incendios forestales y programa de educación bilingüe en línea.</li>
-                        </ul>
+                    <div class="stat-card">
+                        <div class="stat-value">20,000+</div>
+                        <div class="stat-label">Localidades rurales sin conectividad</div>
                     </div>
-                    
-                    <div class="case-study">
-                        <h3>Valle de Bravo Rural, Estado de México</h3>
-                        <p>Red de 12 comunidades rurales conectadas mediante un proyecto público-privado:</p>
-                        <ul>
-                            <li>Colaboración entre AT&T, gobierno municipal y asociaciones civiles para implementar una red de pequeñas celdas 4G.</li>
-                            <li>Modelo de financiamiento mixto con tarifas escalonadas según capacidad económica.</li>
-                            <li>Resultados: creación de un corredor agrícola digital que ha aumentado en 35% los ingresos de productores locales mediante comercialización directa, implementación de sistema de monitoreo ambiental y programa de alfabetización digital que ha capacitado a 2,000 personas.</li>
-                        </ul>
+                    <div class="stat-card">
+                        <div class="stat-value">15 Mbps</div>
+                        <div class="stat-label">Velocidad promedio en zonas rurales</div>
                     </div>
-                </article>
+                </div>
+                
+                <h3 class="subsection-title">Principales obstáculos para la conectividad rural</h3>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Geografía accidentada</span>
+                            <p>Terreno montañoso y dispersión poblacional que dificulta el despliegue de infraestructura convencional.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Baja densidad poblacional</span>
+                            <p>Reduce el retorno de inversión para operadores privados, haciendo poco atractivas las zonas rurales.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Limitaciones eléctricas</span>
+                            <p>Suministro eléctrico inestable o inexistente en algunas comunidades remotas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Barreras socioeconómicas</span>
+                            <p>Alfabetización digital limitada y dificultades económicas para adquirir dispositivos y servicios.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="content-section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Iniciativas del gobierno</h2>
+                <p>El gobierno mexicano ha implementado diversos programas para mejorar la conectividad rural:</p>
+                
+                <div class="pilares-container">
+                    <div class="pilar-card">
+                        <div class="pilar-header">
+                            <h3>Red Compartida</h3>
+                        </div>
+                        <div class="pilar-content">
+                            <p>Proyecto de asociación público-privada que opera una red mayorista de telecomunicaciones utilizando la banda de 700 MHz para proporcionar cobertura 4G LTE en zonas rurales. Meta de cobertura del 92.2% de la población para finales de 2025.</p>
+                        </div>
+                    </div>
+                    <div class="pilar-card">
+                        <div class="pilar-header">
+                            <h3>Internet para Todos</h3>
+                        </div>
+                        <div class="pilar-content">
+                            <p>Programa gubernamental que utiliza la infraestructura de la Comisión Federal de Electricidad (CFE) para llevar internet a comunidades marginadas. Objetivo de conectar 13,000 localidades rurales para 2026.</p>
+                        </div>
+                    </div>
+                    <div class="pilar-card">
+                        <div class="pilar-header">
+                            <h3>Puntos México Conectado</h3>
+                        </div>
+                        <div class="pilar-content">
+                            <p>Centros comunitarios digitales que ofrecen acceso gratuito a internet, capacitación y servicios digitales. Más de 150 centros operativos en todo el país, con énfasis en zonas de alta marginación.</p>
+                        </div>
+                    </div>
+                    <div class="pilar-card">
+                        <div class="pilar-header">
+                            <h3>Incentivos Regulatorios</h3>
+                        </div>
+                        <div class="pilar-content">
+                            <p>Políticas del IFT que incluyen obligaciones de cobertura en concesiones de espectro, tarifas preferenciales para zonas rurales y simplificación de trámites para el despliegue de infraestructura en comunidades prioritarias.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="datos-section">
+            <div class="container">
+                <h2 class="datos-title">Datos abiertos y transparencia</h2>
+                
+                <div class="datos-grid">
+                    <div class="datos-card">
+                        <div class="datos-card-header">
+                            <h3 class="datos-card-title">Portales de transparencia</h3>
+                        </div>
+                        <div class="datos-card-content">
+                            <p>Sitios web que publican datos gubernamentales en formatos reutilizables para fomentar la innovación y la rendición de cuentas.</p>
+                        </div>
+                    </div>
+                    <div class="datos-card">
+                        <div class="datos-card-header">
+                            <h3 class="datos-card-title">Hackathones cívicos</h3>
+                        </div>
+                        <div class="datos-card-content">
+                            <p>Eventos donde programadores desarrollan soluciones basadas en datos públicos para resolver problemas urbanos específicos.</p>
+                        </div>
+                    </div>
+                    <div class="datos-card">
+                        <div class="datos-card-header">
+                            <h3 class="datos-card-title">Visualizaciones de datos</h3>
+                        </div>
+                        <div class="datos-card-content">
+                            <p>Herramientas que presentan información compleja de forma accesible para todos los ciudadanos, facilitando su comprensión.</p>
+                        </div>
+                    </div>
+                    <div class="datos-card">
+                        <div class="datos-card-header">
+                            <h3 class="datos-card-title">APIs públicas</h3>
+                        </div>
+                        <div class="datos-card-content">
+                            <p>Interfaces que permiten a desarrolladores independientes crear aplicaciones utilizando datos oficiales, multiplicando su impacto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Empresas participantes</h2>
+                <p>Diversas empresas del sector privado están contribuyendo a mejorar la conectividad rural en México:</p>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Operadores tradicionales</span>
+                            <p>Telmex/Telcel, AT&T y Telefónica/Movistar han expandido su cobertura a zonas rurales, aunque principalmente en aquellas con mayor densidad poblacional.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Operadores regionales</span>
+                            <p>Altan Redes, operador de la Red Compartida, proporciona infraestructura mayorista a otros proveedores, facilitando la entrada de nuevos competidores.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Proveedores satelitales</span>
+                            <p>Starlink de SpaceX y Viasat ofrecen conectividad en zonas donde la infraestructura terrestre es inviable, aunque con costos aún elevados.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Empresas tecnológicas</span>
+                            <p>Google (con su proyecto Loon) y Facebook Connectivity colaboran con operadores locales para implementar soluciones de acceso en comunidades rurales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom"></div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Tecnología satelital y 4G rural</h2>
+                <p>Las soluciones tecnológicas innovadoras están jugando un papel crucial en la conectividad de zonas rurales:</p>
+                
+                <h3 class="subsection-title">Internet satelital de nueva generación</h3>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <h4>Constelaciones de órbita baja (LEO)</h4>
+                        <p>Satélites como los de Starlink operan mucho más cerca de la Tierra (550 km vs 35,000 km de los satélites tradicionales), reduciendo significativamente la latencia.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Velocidades competitivas</h4>
+                        <p>Ofrecen entre 50-150 Mbps, comparables con conexiones urbanas de banda ancha.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Independencia geográfica</h4>
+                        <p>Funcionan en áreas montañosas o selváticas donde el despliegue de infraestructura terrestre es inviable.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Limitaciones</h4>
+                        <p>Costos iniciales elevados (equipo terminal de $500 USD y suscripciones mensuales de $99 USD), aunque existen programas de subsidio gubernamental.</p>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Soluciones 4G/5G rurales</h3>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <h4>Estaciones base de largo alcance</h4>
+                        <p>Modificaciones que permiten cubrir hasta 30 km de radio con una sola torre, comparado con los 5-10 km en entornos urbanos.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Sistemas con energía renovable</h4>
+                        <p>Torres 4G equipadas con paneles solares y baterías para operar en zonas sin acceso a la red eléctrica.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Tecnología 450 MHz</h4>
+                        <p>Utilización de frecuencias bajas que permiten mayor penetración y alcance, ideal para zonas rurales.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Redes comunitarias</h4>
+                        <p>Implementaciones de pequeña escala gestionadas por las propias comunidades con apoyo técnico externo.</p>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Soluciones híbridas</h3>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <h4>Backhaul satelital + distribución local</h4>
+                        <p>Uso de enlaces satelitales para conectar una comunidad a internet, y distribución local mediante WiFi o pequeñas celdas 4G.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Mesh networks</h4>
+                        <p>Redes de nodos interconectados que extienden la cobertura a través de múltiples puntos de acceso que se comunican entre sí.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>TV White Spaces</h4>
+                        <p>Utilización de frecuencias no utilizadas del espectro de televisión para transmitir datos de banda ancha a largas distancias.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom"></div>
+        </section>
+
+        <section class="content-section bg-alt">
+            <div class="container">
+                <h2 class="section-title">Beneficios para la educación y salud</h2>
+                <p>La conectividad rural está transformando sectores esenciales como la educación y la salud en comunidades remotas:</p>
+                
+                <h3 class="subsection-title">Impacto en la educación</h3>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <h4>Recursos educativos digitales</h4>
+                        <p>Estudiantes rurales pueden acceder a bibliotecas virtuales, cursos en línea y materiales multimedia que complementan los limitados recursos físicos disponibles en sus escuelas.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Educación a distancia</h4>
+                        <p>Posibilidad de tomar clases con profesores especializados que no están físicamente en la comunidad, especialmente importante para niveles medio superior y superior.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Capacitación docente</h4>
+                        <p>Maestros rurales pueden participar en programas de desarrollo profesional en línea sin necesidad de desplazarse a centros urbanos.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Reducción de deserción</h4>
+                        <p>Estudios recientes muestran una disminución del 15% en la tasa de abandono escolar en comunidades que obtuvieron conectividad a internet.</p>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Transformación de servicios de salud</h3>
+                <div class="features-container">
+                    <div class="feature-box">
+                        <h4>Telemedicina</h4>
+                        <p>Consultas remotas con especialistas médicos que no están disponibles localmente, reduciendo la necesidad de viajes costosos y difíciles para los pacientes.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Monitoreo remoto</h4>
+                        <p>Seguimiento de pacientes con enfermedades crónicas mediante dispositivos conectados que transmiten datos vitales a centros de salud.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Capacitación continua</h4>
+                        <p>Personal de salud rural puede mantenerse actualizado mediante cursos y webinars en línea.</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Sistemas de emergencia</h4>
+                        <p>Mejora en la coordinación de servicios de emergencia y evacuaciones médicas gracias a la conectividad constante.</p>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Resultados cuantificables</h3>
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-number">30%</div>
+                        <div class="stat-label">Reducción en tiempo de diagnóstico de enfermedades complejas en comunidades con acceso a telemedicina</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">25%</div>
+                        <div class="stat-label">Aumento en la continuidad educativa a nivel medio superior en zonas rurales conectadas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20%</div>
+                        <div class="stat-label">Mejora en resultados de pruebas estandarizadas en escuelas rurales con acceso a internet educativo</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">35%</div>
+                        <div class="stat-label">Disminución en gastos de transporte relacionados con atención médica para familias en comunidades remotas</div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom"></div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Casos de éxito reales</h2>
+                <p>Ejemplos concretos de comunidades que han experimentado transformaciones significativas gracias a la conectividad:</p>
+                
+                <div class="visual-grid">
+                    <div class="visual-card">
+                        <div class="card-content">
+                            <h3>San Miguel Huautla, Oaxaca</h3>
+                            <p>Comunidad zapoteca de 1,200 habitantes que implementó una red comunitaria autónoma con tarifas mensuales de 30 pesos por familia. Resultados: aumento del 40% en la permanencia escolar y creación de 5 microempresas locales que comercializan productos artesanales en línea.</p>
+                        </div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="card-content">
+                            <h3>El Limón, Michoacán</h3>
+                            <p>Localidad de 2,500 habitantes beneficiada por el programa Internet para Todos con instalación de una torre 4G y centro comunitario digital. Resultados: sistema de telemedicina que atiende a 500 pacientes mensualmente y reducción del 60% en viajes para trámites administrativos.</p>
+                        </div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="card-content">
+                            <h3>Ejido Nueva Esperanza, Quintana Roo</h3>
+                            <p>Comunidad maya de 800 habitantes con terminal Starlink subsidiada y red mesh WiFi. Resultados: incremento del 80% en reservas de ecoturismo, sistema de alerta temprana para incendios forestales y programa de educación bilingüe en línea.</p>
+                        </div>
+                    </div>
+                    <div class="visual-card">
+                        <div class="card-content">
+                            <h3>Valle de Bravo Rural, Estado de México</h3>
+                            <p>Red de 12 comunidades rurales conectadas mediante proyecto público-privado con AT&T. Resultados: corredor agrícola digital con aumento del 35% en ingresos de productores locales y programa de alfabetización digital para 2,000 personas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wave-bottom"></div>
         </section>
     </main>
 

@@ -226,10 +226,18 @@
     margin-bottom: 2rem;
     background-color: #fff;
     border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
     position: relative;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 .feature-box::before {
@@ -237,7 +245,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 5px;
+    width: 8px;
     height: 100%;
     background-color: var(--amber-clay);
 }
@@ -245,11 +253,103 @@
 .feature-box h3 {
     margin-top: 0;
     color: var(--burnt-copper);
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
 .feature-box p {
     margin-bottom: 0;
+    line-height: 1.6;
+    color: #555;
+}
+
+.feature-title {
+    color: var(--burnt-copper);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.feature-description {
+    flex: 1;
+}
+
+/* Estilos para datos abiertos */
+.open-data-container {
+    margin: 3rem 0;
+}
+
+.open-data-title {
+    color: var(--velvet-wine);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.open-data-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--amber-clay);
+}
+
+.open-data-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.open-data-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-start;
+}
+
+.open-data-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.open-data-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+    background-color: var(--amber-clay);
+}
+
+.open-data-card-title {
+    color: var(--burnt-copper);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.open-data-card-content {
+    flex: 1;
+}
+
+.open-data-card p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #555;
 }
 
 /* Elementos de estadísticas */
@@ -599,4 +699,240 @@ blockquote p {
         width: 35px;
         height: 35px;
     }
+}
+
+/* Новые стили для таблиц сравнения на proveedores.html */
+.comparison-row {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.comparison-row.header {
+    background-color: var(--burnt-copper);
+    color: white;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+}
+
+.comparison-cell {
+    padding: 1.2rem 1rem;
+    flex: 1;
+}
+
+.comparison-row:nth-child(even) {
+    background-color: rgba(214, 140, 69, 0.05);
+}
+
+.comparison-row:last-child {
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+/* Стили для карточек с отзывами */
+.testimonials-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-header {
+    background: linear-gradient(135deg, var(--amber-clay), var(--burnt-copper));
+    color: white;
+    padding: 1.5rem;
+}
+
+.testimonial-header h3 {
+    color: white;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.testimonial-content {
+    padding: 1.5rem;
+}
+
+.testimonial-content p {
+    font-style: italic;
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-content p::before {
+    content: '"';
+    font-size: 3rem;
+    position: absolute;
+    top: -1rem;
+    left: -0.5rem;
+    color: rgba(214, 140, 69, 0.2);
+    font-family: Georgia, serif;
+}
+
+.testimonial-author {
+    text-align: right;
+    font-weight: 600;
+    color: var(--burnt-copper);
+}
+
+/* Дополнительные стили для секции сравнения провайдеров */
+.comparison-table {
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .comparison-row {
+        flex-direction: column;
+    }
+    
+    .comparison-row.header {
+        display: none;
+    }
+    
+    .comparison-cell {
+        padding: 1rem;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    
+    .comparison-cell:before {
+        content: attr(data-label);
+        font-weight: 600;
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--burnt-copper);
+    }
+    
+    .testimonials-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-box {
+        flex: 0 0 100%;
+    }
+}
+
+/* Стили для карточек с рейтингами */
+.rating-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.rating-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rating-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.provider-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--burnt-copper);
+    margin-bottom: 0.5rem;
+}
+
+.rating-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--amber-clay);
+    margin-bottom: 0.5rem;
+}
+
+.rating-bar {
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.rating-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--amber-clay), var(--burnt-copper));
+    border-radius: 4px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+    .rating-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .rating-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Стили для элементов внутри таблицы сравнения цен */
+.price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--burnt-copper);
+    margin-bottom: 0.5rem;
+}
+
+.speed {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--amber-clay);
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0.8rem;
+    background-color: rgba(214, 140, 69, 0.1);
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Дополнительные стили для мобильной версии */
+@media (max-width: 768px) {
+    .price, .speed, .note {
+        margin-bottom: 0.3rem;
+    }
+    
+    .comparison-cell {
+        padding: 1.5rem 1rem;
+    }
+    
+    .comparison-cell[data-label="Proveedor"] {
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: var(--burnt-copper);
+        border-bottom: 2px solid var(--amber-clay);
+    }
+}
+
+.feature-box {
+    gap: 15px;
+    flex-wrap: wrap;
 }

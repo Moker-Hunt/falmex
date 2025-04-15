@@ -7,6 +7,7 @@
     <title>Cómo elegir el mejor proveedor de internet</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/page-styles.css">
 </head>
 <body>
     <header class="site-header">
@@ -35,9 +36,15 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero-animated">
+            <div class="hero-background">
+                <div class="animated-shape shape1"></div>
+                <div class="animated-shape shape2"></div>
+                <div class="animated-shape shape3"></div>
+            </div>
             <div class="container">
                 <h1>Cómo elegir el mejor proveedor de internet</h1>
+                <p>Guía completa para seleccionar el servicio de internet que mejor se adapte a tus necesidades</p>
                 <p class="disclaimer">Este sitio web no está afiliado con ninguna institución gubernamental mexicana.</p>
             </div>
         </section>
@@ -48,103 +55,235 @@
             </div>
         </section>
 
-        <section class="content-section bg-image-1">
+        <section class="content-section">
             <div class="container">
-                <article>
-                    <h2>Velocidad vs. precio</h2>
-                    <p>Encontrar el equilibrio adecuado entre la velocidad de conexión y el costo mensual es fundamental para maximizar el valor de tu servicio de internet:</p>
-                    
-                    <h3>¿Cuánta velocidad realmente necesitas?</h3>
-                    <p>Las necesidades de velocidad varían significativamente según el uso:</p>
-                    <ul>
-                        <li><strong>Uso básico (navegación web, email, redes sociales):</strong> 10-25 Mbps</li>
-                        <li><strong>Streaming de video en HD (1-2 dispositivos):</strong> 25-50 Mbps</li>
-                        <li><strong>Streaming 4K y videojuegos online:</strong> 50-100 Mbps</li>
-                        <li><strong>Hogares con múltiples usuarios y dispositivos:</strong> 100-300 Mbps</li>
-                        <li><strong>Uso profesional intensivo (edición de video, transmisiones en vivo):</strong> 300+ Mbps</li>
-                    </ul>
-                    
-                    <h3>Consideraciones sobre el precio</h3>
-                    <ul>
-                        <li><strong>Promociones iniciales:</strong> Muchos proveedores ofrecen tarifas reducidas durante los primeros meses. Verifica siempre cuál será el precio regular después del periodo promocional.</li>
-                        <li><strong>Cargos ocultos:</strong> Pregunta por costos adicionales como renta de equipos, instalación o penalizaciones por cancelación anticipada.</li>
-                        <li><strong>Paquetes:</strong> Evalúa si los paquetes que incluyen televisión o telefonía realmente te ofrecen ahorro según los servicios que utilizarás.</li>
-                        <li><strong>Compromiso de permanencia:</strong> Algunos planes más económicos requieren contratos de 12 o 24 meses. Considera si estás dispuesto a comprometerte por ese tiempo.</li>
-                    </ul>
-                    
-                    <h3>Relación calidad-precio por proveedor (2025)</h3>
-                    <div class="comparison-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Proveedor</th>
-                                    <th>Plan económico</th>
-                                    <th>Plan intermedio</th>
-                                    <th>Plan premium</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Telmex</td>
-                                    <td>389 MXN/mes<br>50 Mbps<br>Buena relación calidad-precio para uso básico</td>
-                                    <td>599 MXN/mes<br>150 Mbps<br>Equilibrado para familias</td>
-                                    <td>899 MXN/mes<br>500 Mbps<br>Costoso pero con velocidad simétrica</td>
-                                </tr>
-                                <tr>
-                                    <td>Izzi</td>
-                                    <td>420 MXN/mes<br>60 Mbps<br>Ligeramente más caro que Telmex pero incluye más servicios</td>
-                                    <td>620 MXN/mes<br>200 Mbps<br>Buen valor si aprovechas los servicios adicionales</td>
-                                    <td>920 MXN/mes<br>500 Mbps<br>Costoso pero con TV incluida</td>
-                                </tr>
-                                <tr>
-                                    <td>Totalplay</td>
-                                    <td>449 MXN/mes<br>60 Mbps<br>Más caro pero con mejor servicio al cliente</td>
-                                    <td>649 MXN/mes<br>150 Mbps<br>Buena opción para gamers por baja latencia</td>
-                                    <td>999 MXN/mes<br>500 Mbps<br>El más costoso pero con mejor tecnología</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <h2 class="section-title">Velocidad vs. precio</h2>
+                <p>Encontrar el equilibrio adecuado entre la velocidad de conexión y el costo mensual es fundamental para maximizar el valor de tu servicio de internet:</p>
+                
+                <h3 class="subsection-title">¿Cuánta velocidad realmente necesitas?</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Uso básico</span>
+                            <p>Navegación web, email, redes sociales: <strong>10-25 Mbps</strong></p>
+                        </div>
                     </div>
-                    <p><em>Nota: Precios aproximados a abril 2025. Pueden variar según ubicación y promociones vigentes.</em></p>
-                </article>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Streaming HD</span>
+                            <p>Video en HD en 1-2 dispositivos: <strong>25-50 Mbps</strong></p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Streaming 4K y gaming</span>
+                            <p>Video en 4K y videojuegos online: <strong>50-100 Mbps</strong></p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Hogar conectado</span>
+                            <p>Múltiples usuarios y dispositivos: <strong>100-300 Mbps</strong></p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Uso profesional</span>
+                            <p>Edición de video, transmisiones en vivo: <strong>300+ Mbps</strong></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Consideraciones sobre el precio</h3>
+                
+                <div class="info-cards">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="icon-promotion"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h4>Promociones iniciales</h4>
+                            <p>Muchos proveedores ofrecen tarifas reducidas durante los primeros meses. Verifica siempre cuál será el precio regular después del periodo promocional.</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="icon-hidden-fees"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h4>Cargos ocultos</h4>
+                            <p>Pregunta por costos adicionales como renta de equipos, instalación o penalizaciones por cancelación anticipada.</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="icon-bundle"></i>
+                        </div>
+                        <div class="info-card-content">
+                            <h4>Paquetes</h4>
+                            <p>Evalúa si los paquetes que incluyen televisión o telefonía realmente te ofrecen ahorro según los servicios que utilizarás.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Relación calidad-precio por proveedor (2025)</h3>
+                
+                <div class="comparison-table">
+                    <div class="comparison-row header">
+                        <div class="comparison-cell" data-label="Proveedor">Proveedor</div>
+                        <div class="comparison-cell" data-label="Plan económico">Plan económico</div>
+                        <div class="comparison-cell" data-label="Plan intermedio">Plan intermedio</div>
+                        <div class="comparison-cell" data-label="Plan premium">Plan premium</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Telmex</div>
+                        <div class="comparison-cell" data-label="Plan económico">
+                            <div class="price">389 MXN/mes</div>
+                            <div class="speed">50 Mbps</div>
+                            <div class="note">Buena relación calidad-precio para uso básico</div>
+                        </div>
+                        <div class="comparison-cell" data-label="Plan intermedio">
+                            <div class="price">499 MXN/mes</div>
+                            <div class="speed">150 Mbps</div>
+                            <div class="note">Opción equilibrada para la mayoría de hogares</div>
+                        </div>
+                        <div class="comparison-cell" data-label="Plan premium">
+                            <div class="price">899 MXN/mes</div>
+                            <div class="speed">500 Mbps</div>
+                            <div class="note">Cobertura nacional más amplia</div>
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Totalplay</div>
+                        <div class="comparison-cell" data-label="Plan económico">
+                            <div class="price">449 MXN/mes</div>
+                            <div class="speed">60 Mbps</div>
+                            <div class="note">Incluye algunos canales de TV</div>
+                        </div>
+                        <div class="comparison-cell" data-label="Plan intermedio">
+                            <div class="price">649 MXN/mes</div>
+                            <div class="speed">200 Mbps</div>
+                            <div class="note">Mejor opción para streaming y gaming</div>
+                        </div>
+                        <div class="comparison-cell" data-label="Plan premium">
+                            <div class="price">999 MXN/mes</div>
+                            <div class="speed">500 Mbps</div>
+                            <div class="note">El más costoso pero con mejor tecnología</div>
+                        </div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Izzi</div>
+                        <div class="comparison-cell" data-label="Plan económico">
+                            <div class="price">399 MXN/mes</div>
+                            <div class="speed">50 Mbps</div>
+                            <div class="note">Opción económica con WiFi incluido</div>
+                        </div>
+                        <div class="comparison-cell" data-label="Plan intermedio">
+                            <div class="price">549 MXN/mes</div>
+                            <div class="speed">120 Mbps</div>
+                            <div class="note">Buen equilibrio precio-velocidad</div>
+                        </div>
+                        <div class="comparison-cell" data-label="Plan premium">
+                            <div class="price">799 MXN/mes</div>
+                            <div class="speed">300 Mbps</div>
+                            <div class="note">Mejor opción para hogares con múltiples dispositivos</div>
+                        </div>
+                    </div>
+                </div>
+                <p><em>Nota: Precios aproximados a abril 2025. Pueden variar según ubicación y promociones vigentes.</em></p>
             </div>
         </section>
 
-        <section class="content-section bg-image-2">
+        <div class="wave-divider"></div>
+
+        <section class="content-section bg-alt">
             <div class="container">
-                <article>
-                    <h2>Servicio al cliente</h2>
-                    <p>La calidad del soporte técnico y atención al cliente puede marcar una gran diferencia en tu experiencia, especialmente cuando surgen problemas:</p>
-                    
-                    <h3>Canales de atención</h3>
-                    <p>Evalúa la disponibilidad y eficiencia de los diferentes canales de soporte:</p>
-                    <ul>
-                        <li><strong>Atención telefónica:</strong> Verifica los horarios de atención y si cuentan con líneas dedicadas para soporte técnico.</li>
-                        <li><strong>Chat en línea:</strong> Cada vez más importante, permite resolver problemas simples sin largas esperas telefónicas.</li>
-                        <li><strong>Aplicaciones móviles:</strong> Las apps de autogestión pueden ahorrar tiempo para consultas, pagos y reportes de fallas.</li>
-                        <li><strong>Redes sociales:</strong> Algunos proveedores ofrecen soporte eficiente a través de plataformas como Twitter o Facebook.</li>
-                        <li><strong>Centros de atención física:</strong> Importantes para problemas complejos o cuando prefieres atención cara a cara.</li>
-                    </ul>
-                    
-                    <h3>Tiempos de respuesta</h3>
-                    <p>Según estudios recientes de satisfacción del cliente (2025):</p>
-                    <ul>
-                        <li><strong>Telmex:</strong> Tiempo promedio de espera telefónica de 12-18 minutos. Resolución de fallas técnicas en 24-72 horas.</li>
-                        <li><strong>Izzi:</strong> Tiempo promedio de espera telefónica de 10-20 minutos. Resolución de fallas técnicas en 24-96 horas.</li>
-                        <li><strong>Totalplay:</strong> Tiempo promedio de espera telefónica de 8-15 minutos. Resolución de fallas técnicas en 24-48 horas.</li>
-                        <li><strong>Megacable:</strong> Tiempo promedio de espera telefónica de 15-25 minutos. Resolución de fallas técnicas en 48-96 horas.</li>
-                    </ul>
-                    
-                    <h3>Valoraciones de usuarios</h3>
-                    <p>Calificaciones promedio en plataformas de reseñas (escala 1-10):</p>
-                    <ul>
-                        <li><strong>Totalplay:</strong> 7.5 - Destacado por su servicio al cliente y estabilidad de conexión.</li>
-                        <li><strong>AT&T:</strong> 7.2 - Buena atención pero cobertura limitada a ciertas zonas urbanas.</li>
-                        <li><strong>Izzi:</strong> 6.5 - Mejora constante en los últimos años pero con inconsistencias según la región.</li>
-                        <li><strong>Telmex:</strong> 6.8 - Amplia red de atención física pero tiempos de resolución variables.</li>
-                        <li><strong>Megacable:</strong> 6.3 - Buena relación calidad-precio pero soporte técnico mejorable.</li>
-                    </ul>
-                </article>
+                <h2 class="section-title">Servicio al cliente</h2>
+                <p>La calidad del soporte técnico y atención al cliente puede marcar una gran diferencia en tu experiencia, especialmente cuando surgen problemas:</p>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Canales de atención</span>
+                            <p>Verifica qué canales ofrece cada proveedor: teléfono 24/7, chat en línea, redes sociales, app móvil, tiendas físicas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Tiempos de respuesta</span>
+                            <p>Investiga los tiempos promedio de espera para atención telefónica y resolución de fallas técnicas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Reseñas de usuarios</span>
+                            <p>Consulta opiniones en plataformas como Google, redes sociales y foros especializados como Apestan.com.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Garantías de servicio</span>
+                            <p>Algunos proveedores ofrecen compensaciones por interrupciones prolongadas o incumplimiento de velocidad contratada.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Tiempos de respuesta</h3>
+                <p>Según estudios recientes de satisfacción del cliente (2025):</p>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-value">Telmex</div>
+                        <div class="stat-label">12-18 min espera telefónica<br>24-72h resolución de fallas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">Totalplay</div>
+                        <div class="stat-label">8-15 min espera telefónica<br>24-48h resolución de fallas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">Izzi</div>
+                        <div class="stat-label">15-25 min espera telefónica<br>24-96h resolución de fallas</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value">Megacable</div>
+                        <div class="stat-label">10-20 min espera telefónica<br>24-72h resolución de fallas</div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Valoraciones de usuarios</h3>
+                <p>Calificaciones promedio en plataformas de reseñas (escala 1-10):</p>
+                
+                <div class="rating-cards">
+                    <div class="rating-card">
+                        <div class="provider-name">Telmex</div>
+                        <div class="rating-value">6.4</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 64%"></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="provider-name">Totalplay</div>
+                        <div class="rating-value">7.2</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 72%"></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="provider-name">Izzi</div>
+                        <div class="rating-value">5.8</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 58%"></div>
+                        </div>
+                    </div>
+                    <div class="rating-card">
+                        <div class="provider-name">Megacable</div>
+                        <div class="rating-value">6.7</div>
+                        <div class="rating-bar">
+                            <div class="rating-fill" style="width: 67%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -164,42 +303,36 @@
                     
                     <h3>Presencia por región (2025)</h3>
                     <div class="comparison-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Región</th>
-                                    <th>Proveedores principales</th>
-                                    <th>Tecnologías predominantes</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>CDMX y Área Metropolitana</td>
-                                    <td>Telmex, Izzi, Totalplay, AT&T, Megacable</td>
-                                    <td>Fibra óptica, cable, 5G</td>
-                                </tr>
-                                <tr>
-                                    <td>Guadalajara y Monterrey</td>
-                                    <td>Telmex, Megacable, Totalplay, Izzi</td>
-                                    <td>Fibra óptica, cable, 5G</td>
-                                </tr>
-                                <tr>
-                                    <td>Ciudades medianas (100,000-500,000 hab.)</td>
-                                    <td>Telmex, Megacable, Izzi, operadores regionales</td>
-                                    <td>Fibra óptica, cable, 4G LTE</td>
-                                </tr>
-                                <tr>
-                                    <td>Poblaciones pequeñas (10,000-100,000 hab.)</td>
-                                    <td>Telmex, operadores regionales, Telcel</td>
-                                    <td>DSL, 4G LTE, WiMAX</td>
-                                </tr>
-                                <tr>
-                                    <td>Zonas rurales (menos de 10,000 hab.)</td>
-                                    <td>Telmex (limitado), Telcel, Starlink</td>
-                                    <td>4G LTE, satelital, ocasionalmente DSL</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="comparison-row header">
+                            <div class="comparison-cell" data-label="Región">Región</div>
+                            <div class="comparison-cell" data-label="Proveedores principales">Proveedores principales</div>
+                            <div class="comparison-cell" data-label="Tecnologías predominantes">Tecnologías predominantes</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell" data-label="Región">CDMX y Área Metropolitana</div>
+                            <div class="comparison-cell" data-label="Proveedores principales">Telmex, Izzi, Totalplay, AT&T, Megacable</div>
+                            <div class="comparison-cell" data-label="Tecnologías predominantes">Fibra óptica, cable, 5G</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell" data-label="Región">Guadalajara y Monterrey</div>
+                            <div class="comparison-cell" data-label="Proveedores principales">Telmex, Megacable, Totalplay, Izzi</div>
+                            <div class="comparison-cell" data-label="Tecnologías predominantes">Fibra óptica, cable, 5G</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell" data-label="Región">Ciudades medianas (100,000-500,000 hab.)</div>
+                            <div class="comparison-cell" data-label="Proveedores principales">Telmex, Megacable, Izzi, operadores regionales</div>
+                            <div class="comparison-cell" data-label="Tecnologías predominantes">Fibra óptica, cable, 4G LTE</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell" data-label="Región">Poblaciones pequeñas (10,000-100,000 hab.)</div>
+                            <div class="comparison-cell" data-label="Proveedores principales">Telmex, operadores regionales, Telcel</div>
+                            <div class="comparison-cell" data-label="Tecnologías predominantes">DSL, 4G LTE, WiMAX</div>
+                        </div>
+                        <div class="comparison-row">
+                            <div class="comparison-cell" data-label="Región">Zonas rurales (menos de 10,000 hab.)</div>
+                            <div class="comparison-cell" data-label="Proveedores principales">Telmex (limitado), Telcel, Starlink</div>
+                            <div class="comparison-cell" data-label="Tecnologías predominantes">4G LTE, satelital, ocasionalmente DSL</div>
+                        </div>
                     </div>
                     
                     <h3>Cómo verificar la cobertura antes de contratar</h3>
@@ -214,286 +347,599 @@
             </div>
         </section>
 
-        <section class="content-section bg-image-4">
+        <section class="content-section bg-alt">
             <div class="container">
-                <article>
-                    <h2>Equipos incluidos</h2>
-                    <p>Los dispositivos proporcionados por tu proveedor de internet pueden afectar significativamente la calidad de tu experiencia en línea:</p>
-                    
-                    <h3>Tipos de equipos y su importancia</h3>
-                    <ul>
-                        <li><strong>Módems:</strong> Dispositivos que conectan tu hogar con la red del proveedor. Su calidad afecta la estabilidad de la conexión.</li>
-                        <li><strong>Routers:</strong> Distribuyen la señal de internet en tu hogar. Un buen router es esencial para una cobertura WiFi adecuada.</li>
-                        <li><strong>Equipos combinados (gateway):</strong> Dispositivos todo-en-uno que funcionan como módem y router simultáneamente.</li>
-                        <li><strong>Repetidores/extenders:</strong> Algunos proveedores ofrecen dispositivos adicionales para ampliar la cobertura en hogares grandes.</li>
-                        <li><strong>Decodificadores:</strong> Para servicios que incluyen televisión, la calidad del decodificador afecta la experiencia visual.</li>
-                    </ul>
-                    
-                    <h3>Comparativa de equipos por proveedor (2025)</h3>
-                    <div class="comparison-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Proveedor</th>
-                                    <th>Equipos estándar</th>
-                                    <th>Características</th>
-                                    <th>Costo</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Telmex</td>
-                                    <td>Gateway HG8245/HG8247</td>
-                                    <td>WiFi 5 (AC), puertos Gigabit, cobertura media</td>
-                                    <td>Incluido sin costo adicional</td>
-                                </tr>
-                                <tr>
-                                    <td>Izzi</td>
-                                    <td>Gateway Docsis 3.1</td>
-                                    <td>WiFi 6, puertos Gigabit, cobertura media-alta</td>
-                                    <td>Renta mensual de 89 MXN</td>
-                                </tr>
-                                <tr>
-                                    <td>Totalplay</td>
-                                    <td>ONT + Router WiFi 6</td>
-                                    <td>WiFi 6, mesh opcional, cobertura alta</td>
-                                    <td>Incluido en planes premium, renta de 99 MXN en básicos</td>
-                                </tr>
-                                <tr>
-                                    <td>Megacable</td>
-                                    <td>Gateway XB7</td>
-                                    <td>WiFi 6, puertos Gigabit, cobertura media</td>
-                                    <td>Renta mensual de 79 MXN</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <h2 class="section-title">Equipos incluidos</h2>
+                <p>Los dispositivos proporcionados por tu proveedor de internet pueden afectar significativamente la calidad de tu experiencia en línea:</p>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Módems</span>
+                            <p>Dispositivos que conectan tu hogar con la red del proveedor. Su calidad afecta la estabilidad de la conexión.</p>
+                        </div>
                     </div>
-                    
-                    <h3>Opciones para mejorar el equipamiento</h3>
-                    <ul>
-                        <li><strong>Equipos premium:</strong> Algunos proveedores ofrecen routers de gama alta por un costo adicional, ideal para hogares grandes o usuarios exigentes.</li>
-                        <li><strong>Sistemas mesh:</strong> Totalplay y Telmex ofrecen sistemas de WiFi mesh que proporcionan mejor cobertura en toda la casa.</li>
-                        <li><strong>Equipos propios:</strong> Verifica si tu proveedor permite usar tu propio router. Esto puede mejorar el rendimiento pero requiere configuración adicional.</li>
-                        <li><strong>Accesorios complementarios:</strong> Repetidores WiFi, adaptadores PowerLine o extensores de señal pueden mejorar la cobertura sin cambiar de proveedor.</li>
-                    </ul>
-                    
-                    <h3>Preguntas clave sobre equipos</h3>
-                    <ol>
-                        <li>¿El equipo es en comodato (préstamo) o se vende/renta?</li>
-                        <li>¿Qué garantía tiene el equipo y quién se responsabiliza por fallas?</li>
-                        <li>¿Puedo usar mi propio router con el módem del proveedor?</li>
-                        <li>¿Qué protocolo WiFi utiliza (WiFi 5/AC, WiFi 6, etc.)?</li>
-                        <li>¿Ofrecen soporte técnico para configuraciones avanzadas del router?</li>
-                    </ol>
-                </article>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Routers</span>
+                            <p>Distribuyen la señal de internet en tu hogar. Un buen router es esencial para una cobertura WiFi adecuada.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Equipos combinados</span>
+                            <p>Dispositivos todo-en-uno que funcionan como módem y router simultáneamente.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Repetidores/extenders</span>
+                            <p>Algunos proveedores ofrecen dispositivos adicionales para ampliar la cobertura en hogares grandes.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Comparativa de equipos por proveedor (2025)</h3>
+                
+                <div class="comparison-table">
+                    <div class="comparison-row header">
+                        <div class="comparison-cell" data-label="Proveedor">Proveedor</div>
+                        <div class="comparison-cell" data-label="Equipos estándar">Equipos estándar</div>
+                        <div class="comparison-cell" data-label="Características">Características</div>
+                        <div class="comparison-cell" data-label="Costo">Costo</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Telmex</div>
+                        <div class="comparison-cell" data-label="Equipos estándar">Gateway HG8245/HG8247</div>
+                        <div class="comparison-cell" data-label="Características">WiFi 5 (AC), puertos Gigabit, cobertura media</div>
+                        <div class="comparison-cell" data-label="Costo">Incluido sin costo adicional</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Izzi</div>
+                        <div class="comparison-cell" data-label="Equipos estándar">Gateway Docsis 3.1</div>
+                        <div class="comparison-cell" data-label="Características">WiFi 6, puertos Gigabit, cobertura media-alta</div>
+                        <div class="comparison-cell" data-label="Costo">Renta mensual de 89 MXN</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Totalplay</div>
+                        <div class="comparison-cell" data-label="Equipos estándar">ONT + Router WiFi 6</div>
+                        <div class="comparison-cell" data-label="Características">WiFi 6, mesh opcional, cobertura alta</div>
+                        <div class="comparison-cell" data-label="Costo">Incluido en planes premium, renta de 99 MXN en básicos</div>
+                    </div>
+                    <div class="comparison-row">
+                        <div class="comparison-cell" data-label="Proveedor">Megacable</div>
+                        <div class="comparison-cell" data-label="Equipos estándar">Gateway XB7</div>
+                        <div class="comparison-cell" data-label="Características">WiFi 6, puertos Gigabit, cobertura media</div>
+                        <div class="comparison-cell" data-label="Costo">Renta mensual de 79 MXN</div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Opciones para mejorar el equipamiento</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Equipos premium</span>
+                            <p>Algunos proveedores ofrecen routers de gama alta por un costo adicional, ideal para hogares grandes o usuarios exigentes.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Sistemas mesh</span>
+                            <p>Totalplay y Telmex ofrecen sistemas de WiFi mesh que proporcionan mejor cobertura en toda la casa.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Equipos propios</span>
+                            <p>Verifica si tu proveedor permite usar tu propio router. Esto puede mejorar el rendimiento pero requiere configuración adicional.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Accesorios complementarios</span>
+                            <p>Repetidores WiFi, adaptadores PowerLine o extensores de señal pueden mejorar la cobertura sin cambiar de proveedor.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="content-section bg-image-5">
+        <div class="wave-divider"></div>
+
+        <section class="content-section bg-alt">
             <div class="container">
-                <article>
-                    <h2>Contratos y plazos</h2>
-                    <p>Los términos contractuales pueden tener importantes implicaciones a largo plazo, por lo que es fundamental entenderlos antes de firmar:</p>
-                    
-                    <h3>Tipos de compromisos</h3>
-                    <ul>
-                        <li><strong>Contratos con plazo forzoso:</strong> Requieren permanencia mínima (generalmente 12-24 meses) a cambio de mejores tarifas o equipos.</li>
-                        <li><strong>Contratos sin plazo forzoso:</strong> Permiten cancelar en cualquier momento sin penalización, pero suelen tener tarifas más altas.</li>
-                        <li><strong>Servicios prepago:</strong> Pago por adelantado sin compromiso de permanencia, común en servicios móviles e internet rural.</li>
-                    </ul>
-                    
-                    <h3>Políticas por proveedor (2025)</h3>
-                    <div class="comparison-table">
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Proveedor</th>
-                                    <th>Plazo mínimo</th>
-                                    <th>Penalización por cancelación anticipada</th>
-                                    <th>Beneficios por permanencia</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Telmex</td>
-                                    <td>12 meses en planes con promoción<br>Sin plazo en planes regulares</td>
-                                    <td>Pago proporcional al tiempo restante</td>
-                                    <td>Precio promocional, instalación gratuita</td>
-                                </tr>
-                                <tr>
-                                    <td>Izzi</td>
-                                    <td>18 meses en la mayoría de planes</td>
-                                    <td>Cargo fijo de 1,000-3,000 MXN según plan</td>
-                                    <td>Precio promocional, equipos premium</td>
-                                </tr>
-                                <tr>
-                                    <td>Totalplay</td>
-                                    <td>12-24 meses según el plan</td>
-                                    <td>Pago de meses restantes o cargo fijo</td>
-                                    <td>Instalación gratuita, equipos avanzados</td>
-                                </tr>
-                                <tr>
-                                    <td>AT&T</td>
-                                    <td>Sin plazo forzoso en la mayoría de planes</td>
-                                    <td>No aplica</td>
-                                    <td>Flexibilidad, sin compromisos</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <h2 class="section-title">Contratos y plazos</h2>
+                <p>Los términos contractuales pueden tener importantes implicaciones a largo plazo, por lo que es fundamental entenderlos antes de firmar:</p>
+                
+                <h3 class="subsection-title">Tipos de compromisos</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Contratos con plazo forzoso</span>
+                            <p>Requieren permanencia mínima (generalmente 12-24 meses) a cambio de mejores tarifas o equipos.</p>
+                        </div>
                     </div>
-                    
-                    <h3>Cláusulas importantes a revisar</h3>
-                    <ul>
-                        <li><strong>Cambios de tarifa:</strong> ¿Puede el proveedor aumentar el precio durante el contrato?</li>
-                        <li><strong>Velocidad garantizada:</strong> ¿Existe algún compromiso mínimo de velocidad o es "hasta X Mbps" sin garantías?</li>
-                        <li><strong>Políticas de uso justo:</strong> Especialmente importantes en planes "ilimitados" que pueden tener restricciones no evidentes.</li>
-                        <li><strong>Proceso de cancelación:</strong> Requisitos, plazos y documentación necesaria para dar de baja el servicio.</li>
-                        <li><strong>Renovación automática:</strong> ¿El contrato se renueva automáticamente al finalizar el plazo inicial?</li>
-                    </ul>
-                    
-                    <h3>Consejos para negociar mejores términos</h3>
-                    <ol>
-                        <li><strong>Compara ofertas:</strong> Tener cotizaciones de otros proveedores te da poder de negociación.</li>
-                        <li><strong>Solicita exención de plazos:</strong> En zonas con mucha competencia, algunos proveedores pueden eliminar el plazo forzoso.</li>
-                        <li><strong>Negocia la instalación:</strong> Este cargo puede ser reducido o eliminado, especialmente si te comprometes a un plazo.</li>
-                        <li><strong>Pregunta por promociones no publicadas:</strong> A menudo existen ofertas especiales que no se anuncian ampliamente.</li>
-                        <li><strong>Considera el momento:</strong> Al final del mes o trimestre, los agentes suelen tener más flexibilidad para cerrar ventas.</li>
-                    </ol>
-                </article>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Contratos sin plazo forzoso</span>
+                            <p>Permiten cancelar en cualquier momento sin penalización, pero suelen tener tarifas más altas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Servicios prepago</span>
+                            <p>Pago por adelantado sin compromiso de permanencia, común en servicios móviles e internet rural.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Políticas por proveedor (2025)</h3>
+                
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Proveedor</th>
+                                <th>Plazo mínimo</th>
+                                <th>Penalización por cancelación anticipada</th>
+                                <th>Beneficios por permanencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Telmex</td>
+                                <td>12 meses en planes con promoción<br>Sin plazo en planes regulares</td>
+                                <td>Pago proporcional al tiempo restante</td>
+                                <td>Precio promocional, instalación gratuita</td>
+                            </tr>
+                            <tr>
+                                <td>Izzi</td>
+                                <td>18 meses en la mayoría de planes</td>
+                                <td>Cargo fijo de 1,000-3,000 MXN según plan</td>
+                                <td>Precio promocional, equipos premium</td>
+                            </tr>
+                            <tr>
+                                <td>Totalplay</td>
+                                <td>12-24 meses según el plan</td>
+                                <td>Pago de meses restantes o cargo fijo</td>
+                                <td>Instalación gratuita, equipos avanzados</td>
+                            </tr>
+                            <tr>
+                                <td>AT&T</td>
+                                <td>Sin plazo forzoso en la mayoría de planes</td>
+                                <td>No aplica</td>
+                                <td>Flexibilidad, sin compromisos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 class="subsection-title">Cláusulas importantes a revisar</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Cambios de tarifa</span>
+                            <p>¿Puede el proveedor aumentar el precio durante el contrato?</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Velocidad garantizada</span>
+                            <p>¿Existe algún compromiso mínimo de velocidad o es "hasta X Mbps" sin garantías?</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Políticas de uso justo</span>
+                            <p>Especialmente importantes en planes "ilimitados" que pueden tener restricciones no evidentes.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Proceso de cancelación</span>
+                            <p>Requisitos, plazos y documentación necesaria para dar de baja el servicio.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Renovación automática</span>
+                            <p>¿El contrato se renueva automáticamente al finalizar el plazo inicial?</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Consejos para negociar mejores términos</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Compara ofertas</span>
+                            <p>Tener cotizaciones de otros proveedores te da poder de negociación.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Solicita exención de plazos</span>
+                            <p>En zonas con mucha competencia, algunos proveedores pueden eliminar el plazo forzoso.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Negocia la instalación</span>
+                            <p>Este cargo puede ser reducido o eliminado, especialmente si te comprometes a un plazo.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Pregunta por promociones no publicadas</span>
+                            <p>A menudo existen ofertas especiales que no se anuncian ampliamente.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Considera el momento</span>
+                            <p>Al final del mes o trimestre, los agentes suelen tener más flexibilidad para cerrar ventas.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="content-section bg-image-6">
             <div class="container">
-                <article>
-                    <h2>Comparativa Telmex vs. otros</h2>
-                    <p>Como el proveedor más grande de México, Telmex merece una comparación específica con sus principales competidores:</p>
-                    
-                    <h3>Telmex vs. Izzi</h3>
-                    <ul>
-                        <li><strong>Cobertura:</strong> Telmex tiene mayor presencia nacional, mientras Izzi se concentra en zonas urbanas.</li>
-                        <li><strong>Tecnología:</strong> Telmex utiliza principalmente FTTH (fibra al hogar), mientras Izzi combina fibra con redes de cable coaxial.</li>
-                        <li><strong>Velocidad:</strong> Ambos ofrecen planes hasta 500 Mbps, pero Telmex suele ofrecer velocidades simétricas (misma velocidad de subida y bajada).</li>
-                        <li><strong>Contenido:</strong> Izzi destaca por su oferta de televisión y streaming incluido, mientras Telmex se enfoca más en la conectividad pura.</li>
-                        <li><strong>Precio:</strong> Izzi suele ser ligeramente más caro en planes básicos pero ofrece más servicios integrados.</li>
-                    </ul>
-                    
-                    <h3>Telmex vs. Totalplay</h3>
-                    <ul>
-                        <li><strong>Infraestructura:</strong> Ambos utilizan fibra óptica hasta el hogar, pero Totalplay tiene una red más nueva en muchas zonas.</li>
-                        <li><strong>Equipamiento:</strong> Totalplay ofrece equipos más modernos (WiFi 6, sistemas mesh) incluidos en sus planes premium.</li>
-                        <li><strong>Servicio al cliente:</strong> Totalplay generalmente recibe mejores valoraciones en atención y tiempos de respuesta.</li>
-                        <li><strong>Estabilidad:</strong> Telmex suele tener menos interrupciones en zonas establecidas, mientras Totalplay puede variar según el área.</li>
-                        <li><strong>Costo:</strong> Totalplay es aproximadamente 10-15% más caro para velocidades comparables, pero incluye más servicios y mejor equipamiento.</li>
-                    </ul>
-                    
-                    <h3>Telmex vs. proveedores regionales</h3>
-                    <p>En comparación con operadores como Megacable, TVI, Wizz, etc.:</p>
-                    <ul>
-                        <li><strong>Disponibilidad:</strong> Los operadores regionales pueden ofrecer mejor servicio en sus áreas específicas de operación.</li>
-                        <li><strong>Atención local:</strong> Proveedores regionales suelen tener centros de atención más cercanos y conocimiento de problemas locales.</li>
-                        <li><strong>Precios:</strong> Frecuentemente ofrecen tarifas más competitivas para atraer clientes frente al gigante nacional.</li>
-                        <li><strong>Tecnología:</strong> Algunos operadores regionales han invertido en redes más modernas en zonas específicas, superando a Telmex.</li>
-                        <li><strong>Desventajas:</strong> Menor capacidad de inversión en infraestructura y posible inestabilidad financiera a largo plazo.</li>
-                    </ul>
-                </article>
+                <h2 class="section-title">Comparativa Telmex vs. otros</h2>
+                <p>Como el proveedor más grande de México, Telmex merece una comparación específica con sus principales competidores:</p>
+                
+                <h3 class="subsection-title">Telmex vs. Izzi</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Cobertura</span>
+                            <p>Telmex tiene mayor presencia nacional, mientras Izzi se concentra en zonas urbanas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Tecnología</span>
+                            <p>Telmex utiliza principalmente FTTH (fibra al hogar), mientras Izzi combina fibra con redes de cable coaxial.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Velocidad</span>
+                            <p>Ambos ofrecen planes hasta 500 Mbps, pero Telmex suele ofrecer velocidades simétricas (misma velocidad de subida y bajada).</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Contenido</span>
+                            <p>Izzi destaca por su oferta de televisión y streaming incluido, mientras Telmex se enfoca más en la conectividad pura.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Precio</span>
+                            <p>Izzi suele ser ligeramente más caro en planes básicos pero ofrece más servicios integrados.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Telmex vs. Totalplay</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Infraestructura</span>
+                            <p>Ambos utilizan fibra óptica hasta el hogar, pero Totalplay tiene una red más nueva en muchas zonas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Equipamiento</span>
+                            <p>Totalplay ofrece equipos más modernos (WiFi 6, sistemas mesh) incluidos en sus planes premium.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Servicio al cliente</span>
+                            <p>Totalplay generalmente recibe mejores valoraciones en atención y tiempos de respuesta.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Estabilidad</span>
+                            <p>Telmex suele tener menos interrupciones en zonas establecidas, mientras Totalplay puede variar según el área.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Costo</span>
+                            <p>Totalplay es aproximadamente 10-15% más caro para velocidades comparables, pero incluye más servicios y mejor equipamiento.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Telmex vs. proveedores regionales</h3>
+                <p>En comparación con operadores como Megacable, TVI, Wizz, etc.:</p>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Disponibilidad</span>
+                            <p>Los operadores regionales pueden ofrecer mejor servicio en sus áreas específicas de operación.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Atención local</span>
+                            <p>Proveedores regionales suelen tener centros de atención más cercanos y conocimiento de problemas locales.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Precios</span>
+                            <p>Frecuentemente ofrecen tarifas más competitivas para atraer clientes frente al gigante nacional.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Tecnología</span>
+                            <p>Algunos operadores regionales han invertido en redes más modernas en zonas específicas, superando a Telmex.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Desventajas</span>
+                            <p>Menor capacidad de inversión en infraestructura y posible inestabilidad financiera a largo plazo.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
+
+        <div class="wave-divider"></div>
 
         <section class="content-section bg-image-7">
             <div class="container">
-                <article>
-                    <h2>Consejos de usuarios reales</h2>
-                    <p>Recopilamos experiencias y recomendaciones de usuarios mexicanos para ayudarte a tomar la mejor decisión:</p>
-                    
-                    <div class="testimonial">
-                        <h3>Sobre la contratación</h3>
-                        <blockquote>
-                            "Antes de firmar con cualquier proveedor, visita los grupos de Facebook de tu colonia o fraccionamiento. Ahí encontrarás opiniones reales sobre qué compañía funciona mejor específicamente en tu zona. En mi caso, todos recomendaban Totalplay mientras que Izzi tenía muchas quejas por cortes frecuentes en mi colonia."
-                        </blockquote>
-                        <p class="testimonial-author">— Ricardo M., Querétaro</p>
+                <h2 class="section-title">Consejos de usuarios reales</h2>
+                <p>Recopilamos experiencias y recomendaciones de usuarios mexicanos para ayudarte a tomar la mejor decisión:</p>
+                
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <h3>Sobre la contratación</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Antes de firmar con cualquier proveedor, visita los grupos de Facebook de tu colonia o fraccionamiento. Ahí encontrarás opiniones reales sobre qué compañía funciona mejor específicamente en tu zona. En mi caso, todos recomendaban Totalplay mientras que Izzi tenía muchas quejas por cortes frecuentes en mi colonia."</p>
+                            <div class="testimonial-author">— Ricardo M., Querétaro</div>
+                        </div>
                     </div>
                     
-                    <div class="testimonial">
-                        <h3>Sobre negociación</h3>
-                        <blockquote>
-                            "Cuando llamé para cancelar mi servicio con Telmex después de 3 años, inmediatamente me ofrecieron un 30% de descuento por 6 meses y duplicaron mi velocidad sin costo adicional. Siempre vale la pena amenazar con cambiarse antes de realmente hacerlo."
-                        </blockquote>
-                        <p class="testimonial-author">— Laura S., Monterrey</p>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <h3>Sobre negociación</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Cuando llamé para cancelar mi servicio con Telmex después de 3 años, inmediatamente me ofrecieron un 30% de descuento por 6 meses y duplicaron mi velocidad sin costo adicional. Siempre vale la pena amenazar con cambiarse antes de realmente hacerlo."</p>
+                            <div class="testimonial-author">— Laura S., Monterrey</div>
+                        </div>
                     </div>
                     
-                    <div class="testimonial">
-                        <h3>Sobre equipamiento</h3>
-                        <blockquote>
-                            "El router que me dio Izzi no daba buena señal en toda la casa. En vez de pagar su 'extensor premium', compré un sistema mesh por mi cuenta. Funcionó perfectamente con su módem y ahora tengo excelente cobertura en toda la casa por un costo único en lugar de una renta mensual."
-                        </blockquote>
-                        <p class="testimonial-author">— Carlos D., Ciudad de México</p>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <h3>Sobre equipamiento</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"El router que me dio Izzi no daba buena señal en toda la casa. En vez de pagar su 'extensor premium', compré un sistema mesh por mi cuenta. Funcionó perfectamente con su módem y ahora tengo excelente cobertura en toda la casa por un costo único en lugar de una renta mensual."</p>
+                            <div class="testimonial-author">— Carlos D., Ciudad de México</div>
+                        </div>
                     </div>
                     
-                    <div class="testimonial">
-                        <h3>Sobre servicio técnico</h3>
-                        <blockquote>
-                            "Después de meses de frustración con mi conexión inestable, descubrí que el problema era el cableado interno de mi departamento y no el servicio del proveedor. Vale la pena contratar a un técnico independiente para revisar tu instalación antes de cambiar de compañía."
-                        </blockquote>
-                        <p class="testimonial-author">— Mariana V., Guadalajara</p>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <h3>Sobre servicio técnico</h3>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Después de meses de frustración con mi conexión inestable, descubrí que el problema era el cableado interno de mi departamento y no el servicio del proveedor. Vale la pena contratar a un técnico independiente para revisar tu instalación antes de cambiar de compañía."</p>
+                            <div class="testimonial-author">— Mariana V., Guadalajara</div>
+                        </div>
                     </div>
-                    
-                    <h3>Recomendaciones generales</h3>
-                    <ul>
-                        <li>Realiza pruebas de velocidad en diferentes momentos del día para evaluar la consistencia del servicio.</li>
-                        <li>Guarda registro de interrupciones y problemas para solicitar compensaciones cuando corresponda.</li>
-                        <li>Revisa tu factura mensualmente para detectar cargos no autorizados o cambios en la tarifa.</li>
-                        <li>Actualiza periódicamente el firmware de tu router para mejorar seguridad y rendimiento.</li>
-                        <li>Considera complementar tu conexión principal con un plan de datos móviles como respaldo para momentos críticos.</li>
-                    </ul>
-                </article>
+                </div>
+                
+                <h3 class="subsection-title">Recomendaciones generales</h3>
+                
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Pruebas de velocidad</h3>
+                            <p>Realiza pruebas de velocidad en diferentes momentos del día para evaluar la consistencia del servicio.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Registro de problemas</h3>
+                            <p>Guarda registro de interrupciones y problemas para solicitar compensaciones cuando corresponda.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Revisión de factura</h3>
+                            <p>Revisa tu factura mensualmente para detectar cargos no autorizados o cambios en la tarifa.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Actualización de firmware</h3>
+                            <p>Actualiza periódicamente el firmware de tu router para mejorar seguridad y rendimiento.</p>
+                        </div>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Plan de respaldo</h3>
+                            <p>Considera complementar tu conexión principal con un plan de datos móviles como respaldo para momentos críticos.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <div class="wave-divider"></div>
+
         <section class="content-section bg-image-8">
             <div class="container">
-                <article>
-                    <h2>Alternativas inalámbricas</h2>
-                    <p>Si no tienes acceso a conexiones fijas de calidad o necesitas mayor flexibilidad, existen diversas opciones inalámbricas:</p>
-                    
-                    <h3>Internet móvil 4G/5G</h3>
-                    <p>Utilizando la red de telefonía celular para conectividad de datos:</p>
-                    <ul>
-                        <li><strong>Internet Hogar:</strong> Servicios como Telcel Hogar, AT&T Internet en Casa o Movistar Internet Hogar que utilizan un módem fijo 4G/5G.</li>
-                        <li><strong>Ventajas:</strong> Instalación sencilla, sin necesidad de cableado, disponible donde haya cobertura celular.</li>
-                        <li><strong>Desventajas:</strong> Generalmente tiene límites de datos, mayor latencia y puede ser afectado por congestión en la red móvil.</li>
-                        <li><strong>Precios:</strong> Desde 349 MXN/mes por 150GB hasta 699 MXN/mes por planes "ilimitados" (con políticas de uso justo).</li>
-                        <li><strong>Ideal para:</strong> Hogares en zonas sin infraestructura fija, residencias temporales, casas de fin de semana.</li>
-                    </ul>
-                    
-                    <h3>Internet satelital</h3>
-                    <p>Conexión a través de satélites, especialmente útil en zonas remotas:</p>
-                    <ul>
-                        <li><strong>Proveedores:</strong> Starlink, Viasat, HughesNet y próximamente Amazon Kuiper.</li>
-                        <li><strong>Ventajas:</strong> Disponible prácticamente en cualquier ubicación con vista al cielo, velocidades cada vez más competitivas.</li>
-                        <li><strong>Desventajas:</strong> Costo inicial elevado (equipo), susceptible a condiciones climáticas, mayor latencia que conexiones terrestres.</li>
-                        <li><strong>Precios:</strong> Equipo desde $9,300 MXN + suscripción mensual desde $1,100 MXN (Starlink, 2025).</li>
-                        <li><strong>Rendimiento:</strong> Velocidades de 50-250 Mbps con Starlink, 12-100 Mbps con otros proveedores.</li>
-                    </ul>
-                    
-                    <h3>WiMAX y otras tecnologías inalámbricas fijas</h3>
-                    <ul>
-                        <li><strong>Funcionamiento:</strong> Utilizan antenas direccionales para establecer conexión con torres de transmisión cercanas.</li>
-                        <li><strong>Proveedores:</strong> Operadores regionales como WiGo, Netwey, Nubara y otros proveedores locales.</li>
-                        <li><strong>Ventajas:</strong> Mayor estabilidad que internet móvil, sin necesidad de infraestructura de cable.</li>
-                        <li><strong>Desventajas:</strong> Requiere línea de vista con la antena emisora, sensible a obstáculos físicos.</li>
-                        <li><strong>Precios:</strong> Desde 300 MXN/mes por 10 Mbps hasta 800 MXN/mes por 50 Mbps.</li>
-                    </ul>
-                    
-                    <h3>Consideraciones especiales para conexiones inalámbricas</h3>
-                    <ul>
-                        <li><strong>Ubicación del equipo:</strong> El posicionamiento del módem o antena es crucial para obtener la mejor señal posible.</li>
-                        <li><strong>Condiciones climáticas:</strong> Lluvia intensa, neblina o tormentas pueden afectar temporalmente la calidad de la conexión.</li>
-                        <li><strong>Latencia:</strong> Importante considerar si utilizas aplicaciones sensibles al retraso como videojuegos en línea o videoconferencias.</li>
-                        <li><strong>Límites de datos:</strong> Revisa cuidadosamente las políticas de uso justo, incluso en planes "ilimitados".</li>
-                        <li><strong>Escalabilidad:</strong> Evalúa si la solución puede adaptarse a tus necesidades futuras de ancho de banda.</li>
-                    </ul>
-                </article>
+                <h2 class="section-title">Alternativas inalámbricas</h2>
+                <p>Si no tienes acceso a conexiones fijas de calidad o necesitas mayor flexibilidad, existen diversas opciones inalámbricas:</p>
+                
+                <h3 class="subsection-title">Internet móvil 4G/5G</h3>
+                <p>Utilizando la red de telefonía celular para conectividad de datos:</p>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Internet Hogar</span>
+                            <p>Servicios como Telcel Hogar, AT&T Internet en Casa o Movistar Internet Hogar que utilizan un módem fijo 4G/5G.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Ventajas</span>
+                            <p>Instalación sencilla, sin necesidad de cableado, disponible donde haya cobertura celular.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Desventajas</span>
+                            <p>Generalmente tiene límites de datos, mayor latencia y puede ser afectado por congestión en la red móvil.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Precios</span>
+                            <p>Desde 349 MXN/mes por 150GB hasta 699 MXN/mes por planes "ilimitados" (con políticas de uso justo).</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Ideal para</span>
+                            <p>Hogares en zonas sin infraestructura fija, residencias temporales, casas de fin de semana.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Internet satelital</h3>
+                <p>Conexión a través de satélites, especialmente útil en zonas remotas:</p>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Proveedores</span>
+                            <p>Starlink, Viasat, HughesNet y próximamente Amazon Kuiper.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Ventajas</span>
+                            <p>Disponible prácticamente en cualquier ubicación con vista al cielo, velocidades cada vez más competitivas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Desventajas</span>
+                            <p>Costo inicial elevado (equipo), susceptible a condiciones climáticas, mayor latencia que conexiones terrestres.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Precios</span>
+                            <p>Equipo desde $9,300 MXN + suscripción mensual desde $1,100 MXN (Starlink, 2025).</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Rendimiento</span>
+                            <p>Velocidades de 50-250 Mbps con Starlink, 12-100 Mbps con otros proveedores.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">WiMAX y otras tecnologías inalámbricas fijas</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Funcionamiento</span>
+                            <p>Utilizan antenas direccionales para establecer conexión con torres de transmisión cercanas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Proveedores</span>
+                            <p>Operadores regionales como WiGo, Netwey, Nubara y otros proveedores locales.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Ventajas</span>
+                            <p>Mayor estabilidad que internet móvil, sin necesidad de infraestructura de cable.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Desventajas</span>
+                            <p>Requiere línea de vista con la antena emisora, sensible a obstáculos físicos.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Precios</span>
+                            <p>Desde 300 MXN/mes por 10 Mbps hasta 800 MXN/mes por 50 Mbps.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 class="subsection-title">Consideraciones especiales para conexiones inalámbricas</h3>
+                
+                <div class="features-container">
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Ubicación del equipo</span>
+                            <p>El posicionamiento del módem o antena es crucial para obtener la mejor señal posible.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Condiciones climáticas</span>
+                            <p>Lluvia intensa, neblina o tormentas pueden afectar temporalmente la calidad de la conexión.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Latencia</span>
+                            <p>Importante considerar si utilizas aplicaciones sensibles al retraso como videojuegos en línea o videoconferencias.</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Límites de datos</span>
+                            <p>Revisa cuidadosamente las políticas de uso justo, incluso en planes "ilimitados".</p>
+                        </div>
+                    </div>
+                    <div class="feature-box">
+                        <div class="feature-description">
+                            <span class="feature-title">Escalabilidad</span>
+                            <p>Evalúa si la solución puede adaptarse a tus necesidades futuras de ancho de banda.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>

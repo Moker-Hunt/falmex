@@ -258,42 +258,6 @@ main {
     z-index: 1;
 }
 
-.bg-image-1::before {
-    background-image: url('../images/bg-telmex.jpg');
-}
-
-.bg-image-2::before {
-    background-image: url('../images/bg-telcel.jpg');
-}
-
-.bg-image-3::before {
-    background-image: url('../images/bg-izzi.jpg');
-}
-
-.bg-image-4::before {
-    background-image: url('../images/bg-comparison.jpg');
-}
-
-.bg-image-5::before {
-    background-image: url('../images/bg-coverage.jpg');
-}
-
-.bg-image-6::before {
-    background-image: url('../images/bg-customer-service.jpg');
-}
-
-.bg-image-7::before {
-    background-image: url('../images/bg-digital.jpg');
-}
-
-.bg-image-8::before {
-    background-image: url('../images/bg-opinions.jpg');
-}
-
-.bg-image-9::before {
-    background-image: url('../images/bg-conclusion.jpg');
-}
-
 /* Tables */
 .comparison-table {
     overflow-x: auto;
@@ -492,7 +456,7 @@ body.cookie-blur footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .menu-toggle {
         display: block;
     }
@@ -634,17 +598,6 @@ body.cookie-blur footer {
 .diagonal-content p {
     font-size: 1.5rem;
     font-weight: 300;
-}
-
-.diagonal-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../images/pattern-overlay.png');
-    opacity: 0.1;
-    z-index: 1;
 }
 
 .hero-diagonal .disclaimer {
@@ -860,7 +813,6 @@ body.cookie-blur footer {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    filter: brightness(0) invert(1);
 }
 
 .icon-tech {
@@ -1047,8 +999,6 @@ body.cookie-blur footer {
 .commitment-section {
     position: relative;
     padding: 5rem 0;
-    background: url('../images/commitment-bg.jpg') no-repeat center center;
-    background-size: cover;
     color: white;
 }
 
@@ -1722,7 +1672,7 @@ body.cookie-blur footer {
 
 .commitment-text {
     flex: 1;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .commitment-text h2 {
@@ -1732,7 +1682,6 @@ body.cookie-blur footer {
 }
 
 .commitment-text p {
-    color: #ccc;
     margin-bottom: 1rem;
     line-height: 1.6;
 }
@@ -3119,12 +3068,10 @@ home-feature {
     }
     
     .header-cell, .table-row > div {
-        flex-basis: 33.33%;
         flex-grow: 1;
     }
     
     .provider-col, .action-col {
-        flex-basis: 50%;
     }
 }
 
@@ -3138,7 +3085,7 @@ home-feature {
     }
     
     .header-cell, .table-row > div {
-        flex-basis: 50%;
+        flex-basis: 100%;
     }
     
     .provider-col, .action-col {
