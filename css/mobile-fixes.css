@@ -1,0 +1,292 @@
+/* Исправления для мобильной версии сайта Falmex */
+
+/* Общие исправления для мобильной версии */
+@media (max-width: 768px) {
+    /* Исправления для контейнеров */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    /* Исправления для навигации */
+    .nav-toggle {
+        display: block;
+    }
+    
+    .main-header {
+        padding: 10px 0;
+    }
+    
+    .nav-list {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 20px 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    
+    .nav-list.active {
+        max-height: 500px;
+    }
+    
+    .nav-list li {
+        display: block;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .nav-list li a {
+        display: block;
+        padding: 12px 20px;
+    }
+    
+    /* Полностью переработанные стили для packages-slider в мобильной версии */
+    .packages-slider-container {
+        width: 100%;
+        position: relative;
+        margin: 30px 0;
+        overflow: hidden;
+    }
+    
+    .packages-slider-wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .packages-slider {
+        display: flex;
+        transition: transform 0.3s ease;
+        width: 300%; /* Для трех слайдов */
+    }
+    
+    .package-slide {
+        flex: 0 0 33.333%;
+        width: 33.333%;
+        box-sizing: border-box;
+        padding: 0 10px;
+    }
+    
+    .package-card {
+        width: 100%;
+        margin: 0;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    
+    .slider-controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    
+    .slider-prev, .slider-next {
+        background-color: #7B3E4B;
+        color: white;
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        font-size: 18px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+    
+    .slider-dots {
+        display: flex;
+        justify-content: center;
+        margin: 0 15px;
+    }
+    
+    .dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background-color: #ddd;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+    
+    .dot.active {
+        background-color: #7B3E4B;
+    }
+    
+    /* Исправления для tab-content */
+    .tab-content {
+        padding: 15px;
+    }
+    
+    .mobile-features, .home-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .tabs-navigation {
+        flex-direction: column;
+        border-bottom: none;
+    }
+    
+    .tab-button {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 15px 10px;
+    }
+    
+    .tab-button.active {
+        border-bottom: 1px solid #7B3E4B;
+        background-color: rgba(123, 62, 75, 0.05);
+    }
+    
+    .tab-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .tab-icon {
+        margin-bottom: 10px;
+    }
+    
+    /* Исправления для home-icon */
+    .home-icon {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%237B3E4B" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>');
+        width: 40px;
+        height: 40px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 15px;
+    }
+    
+    /* Исправления для app-highlight */
+    .app-highlight {
+        flex-direction: column;
+        margin: 20px 0;
+        overflow: visible;
+    }
+    
+    .app-image {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .app-description {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        display: block;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .phone-mockup {
+        width: 150px;
+        height: 300px;
+    }
+    
+    .app-features {
+        grid-template-columns: 1fr;
+        margin-top: 15px;
+    }
+    
+    .app-features li {
+        margin-bottom: 10px;
+    }
+    
+    /* Дополнительные исправления для мобильной версии */
+    #home-tab {
+        display: block;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+    
+    #home-tab .tab-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    #home-tab .home-icon {
+        display: block;
+        width: 40px;
+        height: 40px;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%237B3E4B" d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg>');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 15px;
+    }
+    
+    #home-tab .tab-header h3 {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+}
+
+/* Дополнительные исправления для очень маленьких экранов */
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle p {
+        font-size: 0.9rem;
+    }
+    
+    .hero-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-item {
+        margin-bottom: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .provider-header h2 {
+        font-size: 1.3rem;
+    }
+    
+    .provider-card, .app-card, .recommendation-card {
+        padding: 15px;
+    }
+    
+    .content-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .content-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .app-header, .testimonial-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .app-icon, .testimonial-provider {
+        margin-bottom: 10px;
+    }
+}

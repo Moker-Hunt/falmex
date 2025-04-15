@@ -1,0 +1,151 @@
+/* Estilos para el slider de paquetes - полностью переработанная версия */
+.izzi-packages {
+    margin: 40px 0;
+}
+
+.izzi-packages h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #7B3E4B;
+    text-align: center;
+}
+
+.packages-slider-container {
+    position: relative;
+    margin: 30px 0;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+.packages-slider-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.packages-slider {
+    display: flex;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.package-card {
+    flex: 0 0 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.package-card.basic {
+    border-top: 4px solid #D68C45;
+}
+
+.package-card.standard {
+    border-top: 4px solid #7B3E4B;
+}
+
+.package-card.premium {
+    border-top: 4px solid #C9A746;
+}
+
+.package-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.package-header h4 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+    color: #333;
+}
+
+.package-price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #7B3E4B;
+}
+
+.package-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.package-features li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #666;
+}
+
+.package-features li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #7B3E4B;
+    font-weight: bold;
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.slider-prev, .slider-next {
+    background-color: #7B3E4B;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    z-index: 10;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    margin: 0 15px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #7B3E4B;
+}
+
+/* Убираем все стили из mobile-fixes.css, которые могут конфликтовать */
+@media (max-width: 768px) {
+    .packages-slider {
+        width: 300%; /* Для трех карточек */
+    }
+    
+    .package-card {
+        flex: 0 0 33.333%;
+        width: 33.333%;
+        padding: 15px;
+    }
+}
